@@ -59,7 +59,6 @@ const Hero = () => {
 
                         <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
                             <a href="#services" className="btn btn-primary">Mes Services</a>
-                            <a href="#portfolio" className="btn btn-secondary">Voir Mon Travail</a>
                         </div>
                     </motion.div>
 

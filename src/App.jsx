@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Banner from './components/Banner';
 import Services from './components/Services';
 import Ugc from './components/Ugc';
-import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import VideoNotification from './components/VideoNotification';
@@ -47,7 +46,6 @@ function App() {
       <Banner />
       <Services />
       <Ugc />
-      <Portfolio />
       <Contact />
       <Footer />
       <VideoNotification />

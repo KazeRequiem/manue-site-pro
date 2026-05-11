@@ -71,26 +71,29 @@ const Contact = () => {
                         borderRadius: '24px',
                         boxShadow: '0 20px 40px rgba(0,0,0,0.05)'
                     }} className="contact-form-container">
-                        <form style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }} onSubmit={(e) => e.preventDefault()}>
+                        <form action="https://formsubmit.co/communication.manue@gmail.com" method="POST" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                            {/* Désactiver le captcha (optionnel, décommentez si vous préférez) */}
+                            {/* <input type="hidden" name="_captcha" value="false" /> */}
+                            
                             <div style={{ display: 'flex', gap: '1.5rem', flexDirection: 'column' }} className="form-row">
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', flex: 1 }}>
                                     <label htmlFor="name" style={{ fontWeight: 600, fontSize: '0.9rem' }}>Nom</label>
-                                    <input type="text" id="name" placeholder="Votre nom" className="form-input" />
+                                    <input type="text" id="name" name="name" placeholder="Votre nom" className="form-input" required />
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', flex: 1 }}>
                                     <label htmlFor="email" style={{ fontWeight: 600, fontSize: '0.9rem' }}>Email</label>
-                                    <input type="email" id="email" placeholder="votre@email.com" className="form-input" />
+                                    <input type="email" id="email" name="email" placeholder="votre@email.com" className="form-input" required />
                                 </div>
                             </div>
 
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                                 <label htmlFor="subject" style={{ fontWeight: 600, fontSize: '0.9rem' }}>Sujet</label>
-                                <input type="text" id="subject" placeholder="Sujet de votre demande" className="form-input" />
+                                <input type="text" id="subject" name="_subject" placeholder="Sujet de votre demande" className="form-input" required />
                             </div>
 
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                                 <label htmlFor="message" style={{ fontWeight: 600, fontSize: '0.9rem' }}>Message</label>
-                                <textarea id="message" rows="5" placeholder="Parlez-moi de votre projet..." className="form-input" style={{ resize: 'vertical', minHeight: '120px' }}></textarea>
+                                <textarea id="message" name="message" rows="5" placeholder="Parlez-moi de votre projet..." className="form-input" style={{ resize: 'vertical', minHeight: '120px' }} required></textarea>
                             </div>
 
                             <button type="submit" className="btn btn-primary" style={{ marginTop: '1rem', display: 'flex', gap: '10px' }}>
