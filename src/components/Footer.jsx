@@ -33,7 +33,7 @@ const Footer = () => {
                         <Instagram size={20} />
                     </a>
 
-                    <a href="mailto:contact@manue.com" style={{
+                    <a href="mailto:communication.manue@gmail.com" style={{
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                         width: '45px', height: '45px', borderRadius: '50%',
                         backgroundColor: 'var(--color-black-light)', color: 'var(--color-pink)',
@@ -46,7 +46,7 @@ const Footer = () => {
                     </a>
 
                     {/* Optional LinkedIn */}
-                    <a href="#" style={{
+                    <a href="https://www.linkedin.com/in/emmanuelle-bertin-019046258/" target="_blank" rel="noopener noreferrer" style={{
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                         width: '45px', height: '45px', borderRadius: '50%',
                         backgroundColor: 'var(--color-black-light)', color: 'var(--color-pink)',
