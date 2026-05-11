@@ -37,7 +37,8 @@ const Navbar = () => {
         >
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 {/* LOGO area */}
-                <a href="#hero" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <a href="#hero" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+                    <img src="/manue2.jpg" alt="Logo" style={{ width: '45px', height: '45px', borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--color-pink-light)' }} />
                     <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '1.2rem', color: 'var(--color-black)', letterSpacing: '1px' }}>
                         ComManue
                     </span>
